@@ -1,0 +1,6 @@
+name: Status
+author: Atticus Zambrana
+main: net.angusbeefgaming.StatusMain
+commands:
+  status: 
+    description: See Server Status
