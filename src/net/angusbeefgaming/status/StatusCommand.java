@@ -12,8 +12,8 @@ import org.bukkit.Bukkit;
 public class StatusCommand implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command arg1, String arg2, String[] arg3) {
-		if(!(sender.hasPermission("angusbeef.status"))){
-			sender.sendMessage(ChatColor.RED + "Missing Permission node: angusbeef.status");
+		if(!(sender.hasPermission("serverstatus.use"))){
+			sender.sendMessage(ChatColor.RED + "Missing Permission node: serverstatus.use");
 			return false;
 		}
 		sender.sendMessage(ChatColor.GREEN + "Server Name > " + ChatColor.YELLOW + Bukkit.getServer().getServerName());
